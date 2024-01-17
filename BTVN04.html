@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function count(s, a) {
+            let count = 0;
+            for (let i = 0; i < s.length; i++) {
+                if (s[i] === a) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        let s = prompt("Nhập vào một chuỗi:");
+        let a = prompt("Nhập vào một ký tự:");
+        let result = count(s, a);
+        console.log("So ky tu "+a+" trong chuoi la: "+result);
+    </script>
+</body>
+</html>
